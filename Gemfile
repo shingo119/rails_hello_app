@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.5'
 
 gem 'rails',      '6.0.4'
+gem 'bcrypt',     '3.1.13'
+gem 'bootstrap-sass', '3.4.1'
 gem 'puma',       '4.3.6'
 gem 'sass-rails', '5.1.0'
 gem 'webpacker',  '4.0.7'
@@ -19,8 +21,9 @@ end
 group :development do
   gem 'web-console',           '4.0.1'
   gem 'listen',                '3.1.5'
-  gem 'spring',                '2.1.0'
-  gem 'spring-watcher-listen', '2.0.1'
+  # gem 'spring',                '2.1.0'
+  # gem 'spring-watcher-listen', '2.0.1'
+  gem 'spring-commands-rspec'
 end
 
 group :test do
